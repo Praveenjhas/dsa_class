@@ -26,6 +26,6 @@
   **Tip:** Memorize two templates:
 
 1. Find any occurrence
-2. Find left/right boundary (lower/upper bound)
+2. Find left/right b/////////oundary (lower/upper bound)
 
 ---

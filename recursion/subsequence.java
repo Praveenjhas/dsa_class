@@ -1,24 +1,25 @@
 import java.util.*;
 public class subsequence {
-   static void subsequnce(String s,int i,List<String> list){
-      if(i==0){
-        list.add(s.charAt(i)+"");
-        list.add("");
-        return ;
-    }
-     subsequnce(s, i-1, list);
-     int size=list.size();
-     for(int j=0;j<size;j++){
-      list.add(list.get(j)+s.charAt(i));
-
-   }
-   }
+    static void Subsequence(String st,List<String> list,int i){
+   if(i==0){
+     list.add(st.charAt(i)+"");
+      list.add("");
+     return ;
+}
+      Subsequence(st, list, i-1);
+    int size=list.size();           //extra work
+    for(int j=0;j<size;j++){
+       list.add(list.get(j)+st.charAt(i));
+  }
+   
+}
+   
  public static void main(String[] args) {
-    Scanner input=new Scanner(System.in);
-    String st=input.next();
-    List<String> list=new ArrayList<>();
-    subsequnce(st,st.length()-1,list);
-    System.out.println(list);
+   Scanner input=new Scanner(System.in);
+     String st=input.next();
+     List<String> list=new ArrayList<>();
+   Subsequence(st,list,st.length()-1);
+   System.out.println(list);
     
  }
     

@@ -16,7 +16,7 @@ public static void main(String[] args) {
     Arrays.sort(chararray);
     String str="";
     for(int i=0;i<s.length();i++){
-            str+=chararray[i]; }
+            str+=chararray[i]; }    //to maintain the lexographical order means from a to b to c it mean sorted order
     permute(str,"");
 
 }

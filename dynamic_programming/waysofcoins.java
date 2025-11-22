@@ -1,6 +1,6 @@
 package dynamic_programming;
 import java.util.*;
-public class dp3 {
+public class waysofcoins {
     public static void main(String[] args) {
         //find out the state
          //dp state is nth fibnacci state
